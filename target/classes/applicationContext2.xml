@@ -11,8 +11,9 @@
     <bean
             id="myPet"
             class="ru.victor.spring.SpringAnimal.Dog"
-            scope="prototype"
-    >
+            init-method="init"
+            destroy-method="destroy"
+            scope="prototype">
     </bean>
 
 </beans>

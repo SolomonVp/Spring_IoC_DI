@@ -1,7 +1,7 @@
 package ru.victor.spring.SpringAnimal;
 
 public class Dog implements Pet{
-    private String name;
+//    private String name;
     public Dog() {
         System.out.println("Dog bean is created...");
     }
@@ -11,10 +11,18 @@ public class Dog implements Pet{
         System.out.println("\n- Bow-Bow, i'm your funny dog!");
     }
 
-    public String getName() {
-        return name;
+    protected void init() {
+        System.out.println("Class Dog: init");
     }
-    public void setName(String name) {
-        this.name = name;
+
+    private void destroy() {
+        System.out.println("Class Dog: destroy");
     }
+
+//    public String getName() {
+//        return name;
+//    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 }
