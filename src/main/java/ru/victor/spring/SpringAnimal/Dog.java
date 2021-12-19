@@ -1,5 +1,8 @@
 package ru.victor.spring.SpringAnimal;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Dog implements Pet{
     private String name;
     public Dog() {
