@@ -1,8 +1,10 @@
 package ru.victor.spring.SpringAnimal;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Dog implements Pet{
     private String name;
     public Dog() {
